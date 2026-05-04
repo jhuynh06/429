@@ -1,7 +1,8 @@
 # 429 Project
 
 **CSC 429 - Current Topics in Cybersecurity, Cal Poly San Luis Obispo**
-**Instructor: Dongfenf Fang**
+
+**Instructor: Dongfeng Fang**
 
 **Team Members:**
 
