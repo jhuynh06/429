@@ -5,6 +5,8 @@ import sys
 import time
 from collections import Counter, defaultdict
 from pathlib import Path
+from datetime import datetime, timezone #Needed for Benign
+from dateutil.relativedelta import relativedelta #Needed for Benign
 
 from pydriller import Repository
 
@@ -238,6 +240,13 @@ def extract_metadata(repo_url):
     for commit in Repository(repo_url).traverse_commits():
         yield featurize_commit(commit, author_state)
 
+# def extract_metadata(repo_url): #Used this one for benign repos
+#     author_state = defaultdict(new_author_state)
+
+#     since_date = datetime.now(timezone.utc) - relativedelta(months=2)
+
+#     for commit in Repository(repo_url, since=since_date).traverse_commits():
+#         yield featurize_commit(commit, author_state)
 
 if __name__ == "__main__":
     args = parse_args()
