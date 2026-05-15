@@ -59,9 +59,9 @@ Repositories that have deleted under a category were included in the original An
 | `colors.js` | `074a0f8ed0c31c35d13d28632bd8a049ff136fb6` | <https://github.com/Marak/colors.js> |
 | `ChatGPT-pdf-filler` | `5ded617797b7db57256ae1145abc86d2599036de`| <https://github.com/0m364/ChatGPT-pdf-filler> |
 | `xz` | `cf44e4b7f5dfdbf8c78aef377c10f71e274f63c0` | <https://github.com/tukaani-project/xz> |
-| 'The-Great-Suspender-Reloaded' | '183a5c2fe05f8c65433b066c52a44c2f48dcba61' | <https://github.com/tim-dim-ext/The-Great-Suspender-Reloaded> |
-| 'mock-interview' | '1a21c21ddb6cf1a82aa4e2b3cefddf9c6346e1b9' | <https://github.com/benstoica/mock-interview>
-| 'fastuuid' | '658e21039b1ecbdf7ac33219d22c1cc03270a8be' | <https://github.com/fastuuid/fastuuid> |
-| 'ember-gen' | 'e313caaacf8bac5a4a4866fa83260e3bcc48ff16' | <https://github.com/alexferreira/ember-gen> |
-| 'is2-2016-1' | '5b731630699d0143893e2faceb1e5090d6ab14bf' | <https://github.com/hjnucsp/is2-2016-1> |
-| 'ControldeCambios' | '02fe964dcd1c00fc77627ea1367799883ae0e5e7' | <https://github.com/DarkJ24/ControldeCambios> |
+| `The-Great-Suspender-Reloaded` | `183a5c2fe05f8c65433b066c52a44c2f48dcba61` | <https://github.com/tim-dim-ext/The-Great-Suspender-Reloaded> |
+| `mock-interview` | `1a21c21ddb6cf1a82aa4e2b3cefddf9c6346e1b9` | <https://github.com/benstoica/mock-interview>
+| `fastuuid` | `658e21039b1ecbdf7ac33219d22c1cc03270a8be` | <https://github.com/fastuuid/fastuuid> |
+| `ember-gen` | `e313caaacf8bac5a4a4866fa83260e3bcc48ff16` | <https://github.com/alexferreira/ember-gen> |
+| `is2-2016-1` | `5b731630699d0143893e2faceb1e5090d6ab14bf` | <https://github.com/hjnucsp/is2-2016-1> |
+| `ControldeCambios` | `02fe964dcd1c00fc77627ea1367799883ae0e5e7` | <https://github.com/DarkJ24/ControldeCambios> |
