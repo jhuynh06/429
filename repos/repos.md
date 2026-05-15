@@ -3,36 +3,36 @@
 ## Benign Repositories
 | Repository Name | Repository Link |
 | --------------- | --------------- |
-| 'brew' | <https://github.com/homebrew/brew> |
-| 'httpd' | <https://github.com/apache/httpd> | 
-| 'kubernetes' | <https://github.com/kubernetes/kubernetes> |
-| 'linux' | <https://github.com/torvalds/linux> |
-| 'firefox' | <https://github.com/mozilla-mobile/firefox-ios> |
-| 'ansible' | <https://github.com/ansible/ansible> |
-| 'ApacheKafka' | <https://github.com/apache/kafka> |
-| 'curl' | <https://github.com/curl/curl> |
-| 'Django' | <https://github.com/django/django> |
-| 'first-contributions' | <https://github.com/firstcontributions/first-contributions> |
-| 'freeCodeCamp' | <https://github.com/FreeCodeCamp/freecodecamp> |
-| 'Git' | <https://github.com/git/git> |
-| 'godot' | <https://github.com/godotengine/godot> | 
-| 'golang' | <https://github.com/golang/go> |
-| 'Jenkins' | <https://github.com/jenkinsci/jenkins> |
-| 'jupyter-notebook' | <https://github.com/jupyter/notebook> |
-| 'matomo' | <https://github.com/matomo-org/matomo> |
-| 'ollama' | <https://github.com/ollama/ollama> |
-| 'openclaw' | <https://github.com/openclaw/openclaw> |
-| 'OpenCV' | <https://github.com/opencv/opencv> |
-| 'PostgreSQL' | <https://github.com/postgres/postgres> |
-| 'Prometheus' | <https://github.com/prometheus/prometheus> |
-| 'React' | <https://github.com/facebook/react> |
-| 'redis' | <https://github.com/redis/redis> |
-| 'rust' | <https://github.com/rust-lang/rust> |
-| 'SerenityOS' | <https://github.com/serenityos/serenity> |
-| 'tensorflow' | <https://github.com/tensorflow/tensorflow> |
-| 'terraform' | <https://github.com/hashicorp/terraform> |
-| 'vscode' | <https://github.com/microsoft/vscode> |
-| 'zephyr' | <https://github.com/zephyrproject-rtos/zephyr> |
+| `brew` | <https://github.com/homebrew/brew> |
+| `httpd` | <https://github.com/apache/httpd> | 
+| `kubernetes` | <https://github.com/kubernetes/kubernetes> |
+| `linux` | <https://github.com/torvalds/linux> |
+| `firefox` | <https://github.com/mozilla-mobile/firefox-ios> |
+| `ansible` | <https://github.com/ansible/ansible> |
+| `ApacheKafka` | <https://github.com/apache/kafka> |
+| `curl` | <https://github.com/curl/curl> |
+| `Django` | <https://github.com/django/django> |
+| `first-contributions` | <https://github.com/firstcontributions/first-contributions> |
+| `freeCodeCamp` | <https://github.com/FreeCodeCamp/freecodecamp> |
+| `Git` | <https://github.com/git/git> |
+| `godot` | <https://github.com/godotengine/godot> | 
+| `golang` | <https://github.com/golang/go> |
+| `Jenkins` | <https://github.com/jenkinsci/jenkins> |
+| `jupyter-notebook` | <https://github.com/jupyter/notebook> |
+| `matomo` | <https://github.com/matomo-org/matomo> |
+| `ollama` | <https://github.com/ollama/ollama> |
+| `openclaw` | <https://github.com/openclaw/openclaw> |
+| `OpenCV` | <https://github.com/opencv/opencv> |
+| `PostgreSQL` | <https://github.com/postgres/postgres> |
+| `Prometheus` | <https://github.com/prometheus/prometheus> |
+| `React` | <https://github.com/facebook/react> |
+| `redis` | <https://github.com/redis/redis> |
+| `rust` | <https://github.com/rust-lang/rust> |
+| `SerenityOS` | <https://github.com/serenityos/serenity> |
+| `tensorflow` | <https://github.com/tensorflow/tensorflow> |
+| `terraform` | <https://github.com/hashicorp/terraform> |
+| `vscode` | <https://github.com/microsoft/vscode> |
+| `zephyr` | <https://github.com/zephyrproject-rtos/zephyr> |
 
 
 
