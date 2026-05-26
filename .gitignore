@@ -1,2 +1,6 @@
 .zed
 .venv/
+*.h5
+*.pkl
+*.npy
+*.csv
