@@ -110,43 +110,26 @@ results["is_anomaly"] = all_anomalies
 results = results.sort_values("reconstruction_error", ascending=False)
 results.to_csv("anomaly_results.csv", index=False)
 
+# run SHAP
+def anomaly_score_predict(x):
+    reconstructed = autoencoder.predict(x)
+    return np.mean(np.abs(x - reconstructed), axis=1)
 
-# run SHAP // Need more explanation
-background_size= int(min(100, X_train.shape[0]))
-background = X_train[:background_size]
+background_data = shap.sample(X_train, 100)
+explainer = shap.KernelExplainer(anomaly_score_predict, background_data)
 
-anomaly_indices = np.where(all_anomalies)[0]
-anomaly_indices = anomaly_indices[np.argsort(all_errors[anomaly_indices])[::-1]]
+#Currently only does the Top 20 anomalies, can do more but takes more computational power
+top_anomaly_indices = results.head(20).index
+X_to_explain = X_scaled[top_anomaly_indices]
 
-if len(anomaly_indices) > 0:
-    explain_size = int(min(50, len(anomaly_indices)))
+print(f"Calculating SHAP values for top {len(X_to_explain)} anomalies: ")
+shap_values = explainer.shap_values(X_to_explain)
 
-    explained_indices = anomaly_indices[:explain_size]
-    X_explain = X_scaled[explained_indices]
+print("SHAP summary plot: ")
+shap.summary_plot(shap_values, X_to_explain, feature_names=feature_names)
 
-    explainer = shap.Explainer(
-        autoencoder.rse,
-        background,
-        feature_names=feature_names
-    )
-
-    shap_values = explainer(X_explain)
-    shap.summary_plot(
-        shap_values,
-        features=X_explain,
-        feature_names=feature_names
-    )
-
-# export SHAP log
-shap_df = pd.DataFrame(
-        shap_values.values,
-        columns=feature_names
-    )
-
-shap_df["commit_hash"] = metadata.iloc[explained_indices]["commit_hash"].values
-shap_df["author"] = metadata.iloc[explained_indices]["author"].values
-shap_df["source_file"] = metadata.iloc[explained_indices]["source_file"].values
-shap_df["reconstruction_error"] = all_errors[explained_indices]
-shap_df["is_anomaly"] = all_anomalies[explained_indices]
-shap_df.to_csv("shap_anomaly_log.csv", index=False)
-print("Saved shap_anomaly_log.csv")
+#export SHAP
+shap_df = pd.DataFrame(shap_values, columns=feature_names)
+shap_df['original_index'] = top_anomaly_indices
+shap_df.to_csv("shap_anomaly_explanations.csv", index=False)
+print("SHAP values exported to shap_anomaly_explanations.csv")
